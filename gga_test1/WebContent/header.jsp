@@ -53,11 +53,14 @@
 			
 			<div class="header_section2 nav-scroller py-1 mb-2">
 				<nav class="nav d-flex justify-content-between">
-			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">영화</a></li>
-			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">예매</a></li>
+			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
+			      <img src="http://localhost:9000/gga_test1/images/navmovie.png" width="70px" height="35px"></a></li>
+			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
+			      <img src="http://localhost:9000/gga_test1/images/navorder.png" width="65px" height="35px"></a></li>
 		      	  <li class="nav-item dropdown">
 		          <a class="p-2 link-secondary dropdown-toggle" href="#" role="button" 
-		         	 data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+		         	 data-bs-toggle="dropdown" aria-expanded="false">
+		         	 <img src="http://localhost:9000/gga_test1/images/navcom.png" width="75px" height="35px"></a>
 			          <ul class="dropdown-menu">
 			            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/notice/notice_list.jsp"
 			            	target="_parent">공지사항</a></li>
@@ -67,9 +70,13 @@
 			            	target="_parent">FAQ</a></li>
 			          </ul>
 			      </li>
-			      <li><a class="p-2 link-secondary" href="#">대관문의</a></li>
-			      <li><a class="p-2 link-secondary" href="#">스토어</a></li>
-			      <li><a class="p-2 link-secondary" href="#">이벤트</a></li>
+			      <li><a class="p-2 link-secondary" href="#">
+			      <img src="http://localhost:9000/gga_test1/images/navask.png" width="100px" height="35px"></a></li>
+			      <li><a class="p-2 link-secondary" href="#">
+			      <img src="http://localhost:9000/gga_test1/images/navstore.png" width="80px" height="35px"></a></li>
+			      <li><a class="p-2 link-secondary" href="#">
+			   <img src="http://localhost:9000/gga_test1/images/navevent.png" width="80px" height="35px">   
+			      </a></li>
 			      <form class="d-flex" role="search">
 			          <input type="text" placeholder="영화 제목 검색">
 			          <button type="button">검색</button>

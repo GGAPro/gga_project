@@ -30,7 +30,7 @@
 	<footer>
 		<div class="container">
 			<div>
-				<img src="http://localhost:9000/gga_test1/images/footer_top.png">
+				<img src="http://localhost:9000/gga_test1/images/footerimg3.jpg">
 			</div>
 			
 			<div>
