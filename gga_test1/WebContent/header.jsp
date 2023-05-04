@@ -71,8 +71,8 @@
 			      <li><a class="p-2 link-secondary" href="#">스토어</a></li>
 			      <li><a class="p-2 link-secondary" href="#">이벤트</a></li>
 			      <form class="d-flex" role="search">
-			          <input class="form-control me-2" type="search" placeholder="영화 제목 검색" aria-label="Search">
-			          <button class="btn btn-outline-secondary" type="submit">검색</button>
+			          <input type="text" placeholder="영화 제목 검색">
+			          <button type="button">검색</button>
 			       </form>
 			    </nav>
 			</div>

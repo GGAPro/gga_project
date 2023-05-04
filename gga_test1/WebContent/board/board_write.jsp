@@ -92,7 +92,7 @@ function writeReset(){
 		<section class="board">
 			<h1>글쓰기</h1>
 			<form name="writeForm" action="#"  method="get">
-				<table class="table table-bordered" style="width: 85%;">
+				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
 						<td colspan="3">

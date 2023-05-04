@@ -65,7 +65,7 @@ table tr:first-child {
 	<div class="container text-center">
 		<section class="admin_notice">
 			<h1 class="title">관리자 - 공지사항</h1>
-			<table class="table table-bordered" style="width: 85%;">
+			<table class="table table-bordered" style="width: 90%;">
 				<tr>
 					<td colspan="4">
 						<a href="admin_notice_write.jsp">

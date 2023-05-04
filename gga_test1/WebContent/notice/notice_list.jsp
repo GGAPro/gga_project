@@ -58,7 +58,7 @@ table td:nth-child(2){
 	<div class="container text-center">
 		<section class="notice">
 			<h1 class="title">공지사항</h1>
-			<table class="table table-bordered" style="width: 85%;">
+			<table class="table table-bordered" style="width: 90%;">
 				<tr>
 					<th>번호</th>
 					<th>제목</th>

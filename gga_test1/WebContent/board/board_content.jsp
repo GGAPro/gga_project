@@ -75,7 +75,7 @@ function cupdate(){
 		<section class="board">
 			<h1>게시판</h1>
 			<form name="writeForm" action="#"  method="get">
-				<table class="table table-bordered" style="width: 85%;">
+				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
 						<td>스즈메 문단속 재밌어요~^^</td>

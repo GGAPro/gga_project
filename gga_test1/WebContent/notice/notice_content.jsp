@@ -60,7 +60,7 @@ text-align:center;
 		<section class="notice">
 			<h1>공지사항</h1>
 			<form name="writeForm" action="#"  method="get">
-				<table class="table table-bordered" style="width: 85%;">
+				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
 						<td>[전주객사]제24회 전주국제영화제 개최 안내</td>

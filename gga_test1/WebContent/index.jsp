@@ -60,7 +60,7 @@
 	<!-- content -->
 	<div class="container text-center">
 		<div class="section1">
-			<div class="col">
+			<div class="col" >
 			    <iframe justify-content-center width="100%" height="500px" 
 			    src="https://www.youtube.com/embed/cGNUpsevAk4?mute=1&autoplay=1"></iframe>
 			</div>

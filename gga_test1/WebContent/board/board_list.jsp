@@ -70,7 +70,7 @@ img {
 	<div class="container text-center">
 		<section class="board">
 			<h1 class="title">게시판</h1>
-			<table class="table table-bordered" style="width: 85%;">
+			<table class="table table-bordered" style="width: 90%;">
 				<tr>
 					<td colspan="5">
 						<a href="board_write.jsp">
