@@ -74,6 +74,7 @@ header button{
  	margin-left:10px;
 }
 .nav_menu2{
+	display:inline-block;
 	positon:absolute;
 	text-decoration: none;
 	top:8px;

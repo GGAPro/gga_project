@@ -55,9 +55,9 @@
 		<!-- 	<div class="header_section2 nav-scroller py-1 mb-2"> -->
 			<div class="nav_menu2 d-flex justify-content-end" style="list-style-type:none;">
 				<!-- <nav class="nav d-flex justify-content-end"> -->
-			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
+			      <li><a href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
 			     <p>영화</p></a></li>
-			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
+			      <li><a href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
 			      <p>예매</p></a></li>
 		      	  <li class="nav-item dropdown">
 		          <a class="p-2 link-secondary dropdown-toggle" href="#" role="button" 
