@@ -1,20 +1,54 @@
 /********************************
 		Header CSS
 *********************************/
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header{
-	background-image:url("http://localhost:9000/gga_test1/images/header2.png");
+	font-family: 'GangwonEdu_OTFBoldA';
+	background-image:url("http://localhost:9000/gga_test1/images/bgheaderai.png");
 	background-repeat:no-repeat;
-	background-size:1000px 150px;
-	background-position:center;
-	height:150px;
+	/* background-size:1000px 150px; */
+	background-size: 100%;
+/* 	background-position:center; */
+	height:300px;
 	margin-bottom: 70px;
 } 
+
+.header_logo{
+	position:relative;
+	margin-left:30px;
+}
+.nav_menu1{
+	position:absolute;
+	top:8px;
+	right:350px;
+}
+
+.nav_menu1 li a p{
+	color:white;
+	margin-right:10px;
+}
+
+.blog-header-logo img{
+	margin-top:30px;
+	width: 110px;
+	height: 90px;
+	margin-bottom:30px;
+	
+}
 header input{
 	width:200px;
 	heigth:30px;
 	margin-right:20px;
 	border-radius: 5px;
+	border: 0px;
 	padding-left:5px;
+	opacity:80%;
 }
 
 header button{
@@ -27,19 +61,35 @@ header button{
 }
 
 .header_section1 {
+	border:1px solid blue;
 	display:flex;
 	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
+/* 	justify-content: space-between; */
+/* 	align-items: center; */
 }
-.header_section1 .li1{
+.header_section1 .li{
 	text-decoration: none;
  	font-size:15px;
  	color:gray;
  	margin-left:10px;
 }
+.nav_menu2{
+	positon:absolute;
+	text-decoration: none;
+	top:8px;
+	right:350px;
+	border:1px solid red;	
+}
+.nav_menu2 li {
+	text-decoration: none;
+}
 
-.header_section2{
+.nav_menu2 li p {
+	color:white;
+	margin-left:10px;
+}
+
+ .header_section2{
 	padding: 1rem 0;
     margin-bottom: 2rem;
     overflow-x: auto;
@@ -329,7 +379,7 @@ a{
  	font-size:20px;
 }
 
-.li1{
+ .li1{
  	text-decoration: none;
  	font-size:15px;
  	color:gray;

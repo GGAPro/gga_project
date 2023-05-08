@@ -29,38 +29,40 @@
 	<header>
 		<div class="container">
 			<div class="header_section1">
-				<div class="col-4">
+<!-- 				<div class="col-4">
 		        	<a class="link-secondary" href="http://localhost:9000/gga_test1/index.jsp" target="_parent"></a>
-		      	</div>
+		      	</div> -->
 		      	
-		      	<div class="col-4 text-center">
+		      	<div class="header_logo">
+		        	<!-- <a class="blog-header-logo" href="http://localhost:9000/gga_test1/index.jsp" target="_parent"> -->
 		        	<a class="blog-header-logo" href="http://localhost:9000/gga_test1/index.jsp" target="_parent">
-		        	<img src="http://localhost:9000/gga_test1/images/logocolor3.png" width="40%" height="40%">
+		        	<img src="http://localhost:9000/gga_test1/images/newlogo.png">
 		        </a>
 		      	</div>
 		      	
-		      	<div class="col-4 d-flex justify-content-end align-items-center" 
+		      <!-- 	<div class="col-4 d-flex justify-content-end align-items-center"  -->
+		      	<div class="nav_menu1 d-flex justify-content-end" 
 		     		 style="list-style-type:none;">
 			        <li><a href="http://localhost:9000/gga_test1/login/login.jsp" target="_parent" 
-			        	class="li1">로그인</a></li>
+			        	class="li1"><p>로그인</p></a></li>
 					<li><a href="http://localhost:9000/gga_test1/join/join.jsp" target="_parent" 
-						class="li1">회원가입</a></li>
+						class="li1"><p>회원가입</p></a></li>
 					<li><a href="http://localhost:9000/gga_test1/mypage/mypage.jsp" target="_parent" 
-						class="li1">마이페이지</a></li>
-					<li><a href="#" class="li1">고객센터</a></li>
+						class="li1"><p>마이페이지</p></a></li>
+					<li><a href="#" class="li1"><p>고객센터</p></a></li>
 		      </div>
-			</div>
 			
-			<div class="header_section2 nav-scroller py-1 mb-2">
-				<nav class="nav d-flex justify-content-between">
+		<!-- 	<div class="header_section2 nav-scroller py-1 mb-2"> -->
+			<div class="nav_menu2 d-flex justify-content-end" style="list-style-type:none;">
+				<!-- <nav class="nav d-flex justify-content-end"> -->
 			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
-			      <img src="http://localhost:9000/gga_test1/images/navmovie.png" width="70px" height="35px"></a></li>
+			     <p>영화</p></a></li>
 			      <li><a class="p-2 link-secondary" href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
-			      <img src="http://localhost:9000/gga_test1/images/navorder.png" width="65px" height="35px"></a></li>
+			      <p>예매</p></a></li>
 		      	  <li class="nav-item dropdown">
 		          <a class="p-2 link-secondary dropdown-toggle" href="#" role="button" 
 		         	 data-bs-toggle="dropdown" aria-expanded="false">
-		         	 <img src="http://localhost:9000/gga_test1/images/navcom.png" width="75px" height="35px"></a>
+		         	 <p>게시판</p></a>
 			          <ul class="dropdown-menu">
 			            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/notice/notice_list.jsp"
 			            	target="_parent">공지사항</a></li>
@@ -69,21 +71,25 @@
 			            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/board/faq.jsp"
 			            	target="_parent">FAQ</a></li>
 			          </ul>
-			      </li>
+			     </li>
 			      <li><a class="p-2 link-secondary" href="#">
-			      <img src="http://localhost:9000/gga_test1/images/navask.png" width="100px" height="35px"></a></li>
+			      <p>대관문의</p></a></li>
 			      <li><a class="p-2 link-secondary" href="#">
-			      <img src="http://localhost:9000/gga_test1/images/navstore.png" width="80px" height="35px"></a></li>
+			      <p>스토어</p></a></li>
 			      <li><a class="p-2 link-secondary" href="#">
-			   <img src="http://localhost:9000/gga_test1/images/navevent.png" width="80px" height="35px">   
+			   <p>이벤트</p>   
 			      </a></li>
+			      </div>
+			      <div class="mov_search">
 			      <form class="d-flex" role="search">
 			          <input type="text" placeholder="영화 제목 검색">
 			          <button type="button">검색</button>
 			       </form>
-			    </nav>
+			    <!-- </nav> -->
+			     </div>
 			</div>
-		</div>
+			</div>
+		<!-- </div> -->
 	</header>
 	<!-- header -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> <!-- 부트스트랩 -->
