@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
 </head>
 <body>
 	<!-- Header -->
-	<iframe src= "http://localhost:9000/gga_test1/header.html" scrolling= "no" width= "100%" height= "149px" frameborder= 0></iframe>
+	<iframe src= "http://localhost:9000/gga_test1/header.jsp" scrolling= "no" width= "100%" height= "149px" frameborder= 0></iframe>
 	<!-- Header -->
 	
 	<!-- Content -->
@@ -88,7 +90,7 @@
 	</div>
 	
 	<!-- Footer -->
-	<iframe src= "http://localhost:9000/gga_test1/footer.html" scrolling= "no" width= "100%" height= "500px" frameborder= 0></iframe>
+	<iframe src= "http://localhost:9000/gga_test1/footer.jsp" scrolling= "no" width= "100%" height= "500px" frameborder= 0></iframe>
 	<!-- Footer -->
 </body>
 </html>
