@@ -88,77 +88,7 @@ table img{
 						</table>
 					</div>
 				</div>
-			<!-- <div>
-				<img src="http://localhost:9000/gga_test1/images/johnwick.jpg">
-			</div>
-			<div>
-				<nav>
-					<ul>
-						<li><label>제목</label>
-						</li>
-						<li><label>개봉일</label>
-						</li>
-						<li><label>감독</label>
-						</li>
-						<li><label>배우</label>
-						</li>
-						<li><label>장르</label>
-						</li>
-						<li><label>상영시간</label>
-						</li>
-						<li><label>평점</label>
-						</li>
-						<li><label>🚗 </label>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div>	
-				<table border="1">
-					<tr>
-						<td>
-							존윅 4
-						</td>
-					</tr>
-					<tr>
-						<td>
-							2023년 4월 12일
-						</td>
-					</tr>
-					<tr>
-						<td>
-							채드 스타헬스키
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>키아누 리브스
-						
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							범죄, 액션, 스릴러, 느와르, 서스펜스, 피카레스크
-						</td>
-					</tr>
-					<tr>
-						<td>
-							169분 (2시간 49분 5초)
-						</td>
-					</tr>
-					<tr>
-						<td>
-							94% 만족
-						</td>
-					</tr>
-					<tr>
-						<td>
-							256 /(대)
-						</td>
-					</tr>
-				</table>
-			</div> -->
+			
 			<div>
 				<a href="http://localhost:9000/gga_test1/order/order.jsp">
 					<img class="orderbtn" src="../images/orderbtn.png"></a>
@@ -192,7 +122,9 @@ table img{
 				<iframe width="1000" height="450" src="https://www.youtube.com/embed/uMliWmbDDAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
 			</section>
-			
+			<div class="still_cut">
+				<img src="http://localhost:9000/gga_test1/images/stillcut.jpg" >
+			</div>
 			<section class="movie_info3">
 			<div>
 				<a target="_blank" href="http://localhost:9000/gga_test1/images/johncut1.jpg">
@@ -214,9 +146,7 @@ table img{
 					<img alt="cut4" src="http://localhost:9000/gga_test1/images/johncut4.jpg" width="250" height="210">
 				</a>
 			</div>		
-			<div class="still_cut">
-				<img src="http://localhost:9000/gga_test1/images/stillcut.jpg" >
-			</div>
+			
 			</section>
 		</div>
 	</div>

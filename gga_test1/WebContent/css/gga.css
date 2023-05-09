@@ -13,7 +13,7 @@ header{
 	background-image:url("http://localhost:9000/gga_test1/images/bgheaderai.png");
 	background-repeat:no-repeat;
 	/* background-size:1000px 150px; */
-/* 	background-size: 100%; */
+ 	background-size: 100%; 
 /* 	background-position:center; */
 	height:303px;
 	/* margin-bottom: 70px; */
@@ -576,10 +576,10 @@ div.content section.movie_info3 div img { /* 이미지 불투명처리 */
 div.content section.movie_info3 div img:hover { /* 이미지 이벤트 처리 */
 	opacity:1.0;
 }
-div.content section.movie_info3 div.still_cut { /* 스틸컷 글씨 */
+.still_cut { /* 스틸컷 글씨 */
 	/* border:3px double red;
 	position:relative; */
-	margin:auto;
+	margin:0 auto;
 	text-align:center;
 /* 	left:400px;
 	width:200px;
