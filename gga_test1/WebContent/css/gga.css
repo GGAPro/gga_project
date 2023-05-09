@@ -88,6 +88,10 @@ header button{
     margin-right: 44px;
 }
 
+.header_menu2 li a {
+	text-decoration:none;
+}
+
 .header_menu2 > li:last-child {
 	float:right;
 }
@@ -589,4 +593,12 @@ div.content section.movie_info3 div img:hover { /* 이미지 이벤트 처리 */
 	font-family:Neoneon;
 	color:red;
 	text-align:center; */
+}
+
+/***************************
+	footer
+*****************************/
+
+footer .container{
+	margin-top:100px;
 }
