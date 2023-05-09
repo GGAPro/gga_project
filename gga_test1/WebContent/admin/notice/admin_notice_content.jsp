@@ -58,8 +58,7 @@ function cupdate(){
 <body>
 	<!-- header -->
 	<header>
-		<iframe src="http://localhost:9000/gga_test1/header.jsp"
-			scrolling="no" width="100%" height="300px" frameborder=0></iframe>	
+		<jsp:include page="../header.jsp" />
 	</header>
 	<!-- header -->
 	

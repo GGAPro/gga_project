@@ -1,3 +1,7 @@
+*{
+	
+}
+
 /********************************
 		Header CSS
 *********************************/
@@ -13,34 +17,15 @@ header{
 	background-image:url("http://localhost:9000/gga_test1/images/bgheaderai.png");
 	background-repeat:no-repeat;
 	/* background-size:1000px 150px; */
-	background-size: 100%;
+/* 	background-size: 100%; */
 /* 	background-position:center; */
-	height:300px;
-	margin-bottom: 70px;
+	/* height:300px; */
+	/* margin-bottom: 70px; */
 } 
-
-.header_logo{
-	position:relative;
-	margin-left:30px;
-}
-.nav_menu1{
-	position:absolute;
-	top:8px;
-	right:350px;
-}
-
-.nav_menu1 li a p{
+header a{
 	color:white;
-	margin-right:10px;
 }
 
-.blog-header-logo img{
-	margin-top:30px;
-	width: 110px;
-	height: 90px;
-	margin-bottom:30px;
-	
-}
 header input{
 	width:200px;
 	heigth:30px;
@@ -61,53 +46,120 @@ header button{
 }
 
 .header_section1 {
-	border:1px solid blue;
-	display:flex;
-	flex-wrap: nowrap;
-/* 	justify-content: space-between; */
-/* 	align-items: center; */
-}
-.header_section1 .li{
-	text-decoration: none;
- 	font-size:15px;
- 	color:gray;
- 	margin-left:10px;
-}
-.nav_menu2{
-	display:inline-block;
-	positon:absolute;
-	text-decoration: none;
-	top:8px;
-	right:350px;
-	border:1px solid red;	
-}
-.nav_menu2 li {
-	text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.nav_menu2 li p {
-	color:white;
-	margin-left:10px;
-}
-
- .header_section2{
-	padding: 1rem 0;
-    margin-bottom: 2rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+.header_section1 img {
+  width: 110px;
+  height: 90px;
 }
 
 
+.header_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header_menu li {
+  margin-right: 20px;
+}
+
+.header_menu li:last-child {
+  margin-right: 0;
+}
+
+.header_menu a {
+  text-decoration: none;
+}
+
+.header_menu2 {
+	width:500px;
+	float:left;
+	position:relative;
+	top: -70px;
+	left:470px;
+	
+}
+
+.header_menu2 li {
+	float:left;
+    margin-right: 44px;
+}
+
+.header_menu2 > li:last-child {
+	float:right;
+}
+
+.header_menu2 li:last-child {
+  margin-right: 0;
+}
+
+.mov_search {
+	width:300px;
+	clear:both;
+	position:relative;
+	left:700px;
+	top: -70px;
+}
 /*******************************
  예매 페이지
 *************************************/
-@font-face {
-   font-family: 'KOTRA_BOLD-Bold';
-   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
+
+/*                대관문의 - 송지웅 05-02                            */
+
+/* 대관문의 - 표지 */
+div.content section.coron_1 { /* section 고정  */
+	border:1px solid red;
+	width:1000px; height:600px;
+	margin:auto;
 }
+div.content section.coron_1 div { /* div relative */
+	clear:both;
+	position:relative;
+}
+div.content section.coron_1 div img {
+	width:100%;
+	position:absolute;
+}
+div.content section.coron_1 div.con {
+	color:purple;
+	font-size:50pt;
+	text-align:center;
+	margin-top:130px;
+}
+/* 대관문의 - 내용 */
+div.content section.coron_2 { /* section 고정  */
+	border:1px solid orange;
+	width:1000px; height:600px;
+	margin:auto;
+	position:relative;
+	
+}
+div.content section.coron_2 div {
+	border:1px solid blue;
+	width:28%; height:30%;
+	display:inline-block;
+	text-align:center;
+	margin:15px;
+}
+div.content section.coron_2 div:first-child {
+	margin-left:20px;
+}
+div.content section.coron_2 div:nth-child(4) {
+	border:1px solid red;
+	margin-left:150px;
+	width:70%;
+	text-align:left;
+}
+
+/* 대관문의 */
+
 .order_title img{
 width:160px;
 height:100px;
@@ -529,15 +581,16 @@ div.content section.movie_info3 div img:hover { /* 이미지 이벤트 처리 */
 	opacity:1.0;
 }
 div.content section.movie_info3 div.still_cut { /* 스틸컷 글씨 */
-	border:3px double red;
-	position:relative;
+	/* border:3px double red;
+	position:relative; */
 	margin:auto;
-	left:400px;
+	text-align:center;
+/* 	left:400px;
 	width:200px;
 	bottom:430px;
 	font-style:italic;
 	font-size:20pt;
 	font-family:Neoneon;
 	color:red;
-	text-align:center;
+	text-align:center; */
 }

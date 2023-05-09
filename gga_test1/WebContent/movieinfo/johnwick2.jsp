@@ -42,8 +42,7 @@ table img{
 <body>
 	<!-- header -->
 	<header>
-		<iframe src="http://localhost:9000/gga_test1/header.jsp"
-			scrolling="no" width="100%" height="200px" frameborder=0></iframe>	
+		<jsp:include page="../header.jsp" />
 	</header>
 	<!-- header -->
 	
@@ -216,7 +215,7 @@ table img{
 				</a>
 			</div>		
 			<div class="still_cut">
-				<h1>still cut</h1>
+				<img src="http://localhost:9000/gga_test1/images/stillcut.jpg" >
 			</div>
 			</section>
 		</div>

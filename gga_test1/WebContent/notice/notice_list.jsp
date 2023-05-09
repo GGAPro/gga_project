@@ -48,8 +48,7 @@ table td:nth-child(2){
 <body>
 	<!-- header -->
 	<header>
-		<iframe src="http://localhost:9000/gga_test1/header.jsp"
-			scrolling="no" width="100%" height="200px" frameborder=0></iframe>	
+		<jsp:include page="../header.jsp" />
 	</header>
 	<!-- header -->
 	
