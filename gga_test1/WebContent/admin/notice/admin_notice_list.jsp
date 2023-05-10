@@ -55,7 +55,7 @@ table tr:first-child {
 <body>
 	<!-- header -->
 	<header>
-		<jsp:include page="../header.jsp" />
+		<jsp:include page="../../header.jsp" />
 	</header>
 	<!-- header -->
 	
