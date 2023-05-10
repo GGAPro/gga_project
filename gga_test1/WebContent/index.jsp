@@ -35,12 +35,13 @@
 }
 
 .section2 .card{
-		width: 155px;
+		width: 190px;
         float: left;
+        border:1px solid white;
 }
 
 .section2 img{
-	height:200px;
+	height:230px;
 }
 
 .section4{
@@ -58,13 +59,19 @@
 	<div class="container text-center">
 		<div class="section1">
 			<div class="col" >
+			<div class="ggamovietitle">
+			    <img src="http://localhost:9000/gga_test1/images/ggamovietitle.png">
+			    </div>
 			    <iframe justify-content-center width="100%" height="500px" 
 			    src="https://www.youtube.com/embed/cGNUpsevAk4?mute=1&autoplay=1"></iframe>
 			</div>
 		</div>
 		
 		<div class="section2">
-		 	<div class="row row-cols-1 row-cols-md-6 mb-6 justify-content-center">
+		 		<div class="nowtitle">
+			    <img src="http://localhost:9000/gga_test1/images/nowtitle.png">
+			    </div>
+		 	<div class="row row-cols-1 row-cols-md-5 mb-5 justify-content-center">
 		 		<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			    		<a href="http://localhost:9000/gga_test1/movieinfo/johnwick2.jsp">
@@ -72,6 +79,8 @@
 				        		class="card-img-top" alt="..."></a>
 			        	<div class="card-body">
 			          	<p class="card-text">다크나이트</p>
+			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test1/images/orderbtn3.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
@@ -81,6 +90,8 @@
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">듄</p>
+			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test1/images/orderbtn3.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
@@ -90,6 +101,8 @@
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">인셉션</p>
+			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test1/images/orderbtn3.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
@@ -99,6 +112,8 @@
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">슬램덩크</p>
+			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test1/images/orderbtn3.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
@@ -108,10 +123,12 @@
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">스즈메</p>
+			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test1/images/orderbtn3.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
-		    	<div class="col">
+		    	<!-- <div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			        	<img src="http://localhost:9000/gga_test1/images/rings.jpg" 
 			        		class="card-img-top" alt="...">
@@ -119,7 +136,7 @@
 			          	<p class="card-text">반지의 제왕</p>
 			        	</div>
 			     	</div>
-		    	</div>
+		    	</div> -->
 		
 			</div>
 		</div>

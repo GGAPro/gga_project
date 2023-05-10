@@ -375,6 +375,10 @@ height:100px;
 /***************************
 	index
 *****************************/
+.ggamovietitle img{
+	width:400px;
+	height:100px;
+}
 
 .mapimg{
 	width:200px;
@@ -384,10 +388,21 @@ height:100px;
 	width:250px;
 	height:100px;	
 }
+.nowtitle img{
+		width:250px;
+	height:100px;	
+	
+}
 	
 /***************************
 	commons style sheet
 *****************************/
+.orderbtn img{
+	width:160px;
+	height:50px;
+	
+}
+
 * {
 	margin:0px; padding:0px;
 }
