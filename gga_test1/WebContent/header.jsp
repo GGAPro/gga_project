@@ -76,8 +76,8 @@
 			</div>
 				      <div class="mov_search">
 				      <form class="d-flex" role="search">
-				          <input type="text" placeholder="영화 제목 검색">
-				          <button type="button">검색</button>
+				          <input type="text" placeholder=" 영화 제목을 검색해 주세요.">
+				          <button type="button"><p>검색</p></button>
 				       </form>
 				     </div>
 			</div>
