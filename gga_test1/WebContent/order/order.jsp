@@ -90,8 +90,11 @@
 		</ul>
 		</div>
 		
-		<div class="ticket_button" onclick="requestPay()">
+		<div class="ticket_button" onclick="requestcardPay()">
 		<a><img src="http://localhost:9000/gga_test1/images/orderbtn4.png"></a>
+		</div>
+		<div class="kakaopay_button" onclick="requestkakaoPay()">
+		<a><img src="http://localhost:9000/gga_test1/images/kakaopay.png"></a>
 		</div>
 	</div>
 	<!-- content -->
@@ -121,13 +124,39 @@
         var makeMerchantUid = hours +  minutes + seconds + milliseconds;
         
 
-        function requestPay() {
+        function requestkakaoPay() {
             IMP.request_pay({
                 pg : 'kakaopay',
                 pay_method : 'card',
                 merchant_uid: "IMP"+makeMerchantUid, 
                 name : 'GGA 영화 티켓',
-                amount : 1004,
+                amount : 30000,
+                buyer_email : 'Iamport@chai.finance',
+                buyer_name : '아임포트 기술지원팀',
+                buyer_tel : '010-1234-5678',
+                buyer_addr : '서울특별시 강남구 삼성동',
+                buyer_postcode : '123-456',
+	            /* m_redirect_url: "http://localhost:9000/gga_test1/order/ordercon.jsp"  */
+            }, function (rsp) { // callback
+                if (rsp.success) {
+                    console.log(rsp);
+                   location.href="http://localhost:9000/gga_test1/order/ordercon.jsp";
+                    
+                } else {
+                    console.log(rsp);
+                    alert("결제를 실패했습니다. 잠시후 다시 시도해 주세요.");
+                    
+                }
+            });
+        }
+        
+        function requestcardPay() {
+            IMP.request_pay({
+                pg : 'kcp',
+                pay_method : 'card',
+                merchant_uid: "IMP"+makeMerchantUid, 
+                name : 'GGA 영화 티켓',
+                amount : 30000,
                 buyer_email : 'Iamport@chai.finance',
                 buyer_name : '아임포트 기술지원팀',
                 buyer_tel : '010-1234-5678',

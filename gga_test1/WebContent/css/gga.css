@@ -57,14 +57,15 @@ header button{
 
 
 .header_menu {
-  list-style: none;
-  margin: 0;
+ margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
 }
 
 .header_menu li {
+	float:left;
+	list-style-type: none;
   margin-right: 20px;
 }
 
@@ -72,8 +73,8 @@ header button{
   margin-right: 0;
 }
 
-.header_menu a {
-	font-size:11pt;
+.header_menu li a {
+font-size:11pt;
   text-decoration: none;
 }
 
@@ -81,18 +82,20 @@ header button{
 	width:480px;
 	float:left;
 	position:relative;
-	top: -85px;
-	left:560px;
+	top: -50px;
+	left:510px;
 	
 }
 
 .header_menu2 li {
 	float:left;
+	list-style-type: none;
     margin-right: 30px;
 }
 
 .header_menu2 li a {
 	text-decoration:none;
+	
 }
 
 .header_menu2 > li:last-child {
@@ -107,8 +110,8 @@ header button{
 	width:300px;
 	clear:both;
 	position:relative;
-	left:710px;
-	top: -120px;
+	left:720px;
+	top: -40px;
 }
 .d-flex input{
 	font-size:12pt;
@@ -248,8 +251,24 @@ margin-top:100px;
 width:50px;
 }
 .ticket_button {
-margin-left:400px;
+	display:inline-block;
+	margin-left:300px;
 }
+.kakaopay_button{
+	margin-top:40px;
+	display:inline-block;
+	margin-left:50px;
+}
+.kakaopay_button a img{
+	margin-top:20px;
+	width:100px;
+	height:40px;
+}
+.kakaopay_button:hover{
+	cursor:pointer;
+	
+}
+
 .ticket_button:hover{
 	cursor:pointer;
 }

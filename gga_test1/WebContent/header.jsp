@@ -36,26 +36,29 @@
 		      	</div>
 		      	
 		      	<div class="header_menu">
+		      	<ul>
 			        <li><a href="http://localhost:9000/gga_test1/login/login.jsp" target="_parent" 
-			        	><p>로그인</p></a></li>
+			        	>로그인</a></li>
 					<li><a href="http://localhost:9000/gga_test1/join/join.jsp" target="_parent" 
-						><p>회원가입</p></a></li>
+						>회원가입</a></li>
 					<li><a href="http://localhost:9000/gga_test1/mypage/mypage.jsp" target="_parent" 
-						><p>마이페이지</p></a></li>
-					<li><a href="#"><p>고객센터</p></a></li>
+						>마이페이지</a></li>
+					<li><a href="#">고객센터</a></li>
+		      	</ul>
 		       </div>
 		     </div>
 			
 			<div class="header_section2">
 				<div class="header_menu2">
+				<ul>
 				      <li><a href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
-				     	<p>영화</p></a></li>
+				     	영화</a></li>
 				      <li><a href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
-				      	<p>예매</p></a></li>
+				      	예매</a></li>
 			      	  <li class="dropdown">
 			          <a class="dropdown-toggle-split" href="#" role="button" 
 			         	 data-bs-toggle="dropdown" aria-expanded="false">
-			         	 <p>게시판</p></a>
+			         	 게시판</a>
 				          <ul class="dropdown-menu">
 				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/notice/notice_list.jsp"
 				            	target="_parent">공지사항</a></li>
@@ -63,15 +66,16 @@
 				            	target="_parent">커뮤니티</a></li>
 				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/board/faq.jsp"
 				            	target="_parent">FAQ</a></li>
-				          </ul>
+				     </ul>
 				     </li>
 				      <li><a href="http://localhost:9000/gga_test1/coronation/coronation.jsp" target="_parent">
-				      <p>대관문의</p></a></li>
+				      대관문의</a></li>
 				      <li><a href="#">
-				      <p>스토어</p></a></li>
+				      스토어</a></li>
 				      <li><a href="#">
-				   		<p>이벤트</p>
+				   		이벤트
 				      </a></li>
+				          </ul>
 				 </div>
 			</div>
 				      <div class="mov_search">
