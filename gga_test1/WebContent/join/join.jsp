@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>GGA_Test1</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/mycgv_jsp/js/jquery-3.6.4.min.js"></script> <!-- jquery -->
 <script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
@@ -37,45 +38,48 @@
 	<div class="container">
 	<section class="join">
 			<h1 class="title">회원가입</h1>
-			<form name="joinForm" action="#" method="get">
+			<form name="joinForm" action="joinProc.jsp" method="post">
 				<ul>
 					<li>
 						<label>이름</label>
-						<input type="text" name="name" class="input1">
+						<input type="text" name="name" class="input1" id="name">
 					</li>
 					<li>
 						<label>아이디</label>
-						<input type="text" name="id" class="input1">
+						<input type="text" name="id" class="input1" name="id">
 						<button type="button" class="btn_style2">중복체크</button>
+						<span id="idCheck_msg"></span>
 					</li>
 					<li>
 						<label>비밀번호</label>
-						<input type="password" name="pass" class="input1" placeholder="8자 이상 영문(대소문자 구분), 특수문자 포함">
+						<input type="password" name="pass" class="input1" id="pass" placeholder="8자 이상 영문(대소문자 구분), 특수문자 포함">
 					</li>
 					<li>
 						<label>비밀번호 확인</label>
-						<input type="password" name="cpass" class="input1" placeholder="8자 이상 영문(대소문자 구분), 특수문자 포함">
+						<input type="password" name="cpass" class="input1" id="cpass" placeholder="8자 이상 영문(대소문자 구분), 특수문자 포함">
+						<span id="cmsg"></span>
 					</li>
 					<li>
 						<label>성별</label>
-						<input type="radio" name="gender"><span>남자</span> 
-						<input type="radio" name="gender"><span>여자</span>
+						<input type="radio" name="gender" value="m"><span>남자</span> 
+						<input type="radio" name="gender" value="f"><span>여자</span>
 					</li>
 					<li>
 						<label>이메일</label>
-						<input type="text" name="email1" > @
-						<input type="text" name="email2" >
-						<select>
-							<option value="default">선택</option>
-							<option value="naver.com">naver.com</option>
-							<option value="nate.com">nate.com</option>
-							<option value="google.com">google.com</option>
-							<option value="daum.net">daum.net</option>
+						<input type="text" name="email1" id="email1" > @
+						<input type="text" name="email2" id="email2" >
+						<select id="email3">
+							<option value="default">직접입력</option>
+							<option value="naver.com">네이버</option>
+							<option value="nate.com">네이트</option>
+							<option value="google.com">구글</option>
+							<option value="daum.net">다음</option>
 						</select>
 					</li>
 					<li>
 						<label>차량번호</label>
-						<input type="text" name="carnum" class="input1" placeholder= "본인 차량번호 정확하게 기입">
+						<input type="text" name="car1" id="car1" class="input1" placeholder= "예) 00가">
+						<input type="number" name="car2" id="car2" class="input1" placeholder= "예) 0000">
 					</li>
 					<li>
 					<li>
@@ -105,11 +109,7 @@
 						<input type="checkbox" name="genre" value="가족/음악"><span>가족/음악</span>
 					</li>
 					<li>
-						<label>자기소개</label>
-						<textarea name="intro" placeholder="* 200자 이내 작성"></textarea>
-					</li>
-					<li>
-						<button type="button" class="btn_style">가입하기</button>
+						<button type="submit" class="btn_style">가입하기</button>
 						<button type="reset" class="btn_style">다시입력</button>
 					</li>			
 				</ul>

@@ -10,6 +10,9 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="java.security.SecureRandom" %>
+<%@ page import="java.math.BigInteger" %>
 </head>
 <style>
 @media (min-width: 768px) {
@@ -37,15 +40,15 @@
 	<div class="container">
 		<section class="login">
 				<h1 class="title">로그인</h1>
-				<form name="loginForm" action="#" method="get" >
+				<form name="loginForm" action="loginProc.jsp" method="post" >
 					<ul>
 						<li>
 							<label>아이디</label>
-							<input type="text" name="id">
+							<input type="text" name="id" id="id">
 						</li>
 						<li>
 							<label>비밀번호</label>
-							<input type="password" name="pass">
+							<input type="password" name="pass" id="pass">
 						</li>
 						<li>
 							<a href= "http://localhost:9000/test_gga/join/join.html">
@@ -55,6 +58,21 @@
 						<li>
 							<span><a href="#">아이디 찾기></a></span>
 							<span><a href="#">비밀번호 찾기></a></span>
+						</li>
+						<li>
+							<h5>간편로그인</h5>
+							<%
+								String clientId = "A2fCGBIb5qkHcJ1fiBuE";//애플리케이션 클라이언트 아이디값";
+								String redirectURI = URLEncoder.encode("http://localhost:9000/test_gga/index.jsp", "UTF-8");
+								SecureRandom random = new SecureRandom();
+								String state = new BigInteger(130, random).toString();
+								String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";
+								apiURL += "&client_id=" + clientId;
+								apiURL += "&redirect_uri=" + redirectURI;
+								apiURL += "&state=" + state;
+								session.setAttribute("state", state);
+							%>
+							<a href="<%=apiURL%>"><img height="40" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/></a>
 						</li>
 					</ul>
 				</form>

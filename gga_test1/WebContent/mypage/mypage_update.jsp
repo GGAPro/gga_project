@@ -1,5 +1,14 @@
+<%@ page import = "com.gga.vo.MemberVo" %>
+<%@ page import = "com.gga.dao.MemberDao" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <% 
+	String mid = request.getParameter("mid");
+	MemberDao memberDao = new MemberDao();
+	MemberVo memberVo = memberDao.select(mid);
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,23 +26,23 @@
 	<div class= "content">
 		<section class= "mp_update">
 			<h1 class= "title">내 정보 수정</h1>
-			<form name= "mp_updateForm" action="#" method= "get">
+			<form name= "mp_updateForm" action="mpProc.jsp" method= "post">
 				<ul>
 					<li>
 						<label>이름</label>
-						<input type="text" id="name" name="name" class= "input1" value="홍길동" readonly>
+						<input type="text" id="name" name="name" class= "input1" value="<%= memberVo.getName() %>" readonly>
 					</li>
 					<li>
 						<label>아이디</label>
-						<input type="text" id="id" name="id" class= "input1" value="hong123" readonly>
+						<input type="text" id="id" name="id" class= "input1" value="<%= memberVo.getId() %>" readonly>
 					</li>
 					<li>
 						<label>비밀번호</label>
-						<input type="password" id="pass" name="pass" class= "input1">
+						<input type="password" id="pass" name="pass" class= "input1" value="<%= memberVo.getPass() %>">
 					</li>
 					<li>
 						<label>비밀번호 확인</label>
-						<input type="password" id="cpass" name="cpass" class= "input1">
+						<input type="password" id="cpass" name="cpass" class= "input1" value="<%= memberVo.getCpass() %>">
 						<button type="button" id="btn_passUpdate" class= "btn_style2">변경</button>
 					</li>
 					<li>
@@ -43,20 +52,23 @@
 					</li>
 					<li>
 						<label>이메일</label>
-						<input type="text" name="email1" > @
-						<input type="text" name="email2" >
-						<select>
+						<input type="text" name="email1" id="email1" > @
+						<input type="text" name="email2" id="email2" >
+						<select id="email3">
 							<option value="default">선택</option>
-							<option value="naver.com">naver.com</option>
-							<option value="nate.com">nate.com</option>
-							<option value="google.com">google.com</option>
-							<option value="daum.net">daum.net</option>
+							<option value="naver.com">네이버</option>
+							<option value="nate.com">네이트</option>
+							<option value="google.com">구글</option>
+							<option value="daum.net">다음</option>
+							<option value="self">직접입력</option>
 						</select>
 					</li>
 					<li>
 						<label>차량번호</label>
-						<input type="text" name="carnum" class="input1" placeholder= "본인 차량번호 정확하게 기입">
+						<input type="text" name="car1" id="car1" class="input1" placeholder= "앞 2자리 & 글자 (예) 00가)">
+						<input type="number" name="car2" id="car2" class="input1" placeholder= "뒤 네자리 숫자 (예) 0000)">
 					</li>
+					<li>
 					<li>
 						<label>휴대폰</label>
 						<input type="radio" name="tel" value="skt"><span>SKT</span>
@@ -70,7 +82,7 @@
 							<option value="017">017</option>
 						</select>
 						- <input type="text" name="phone2">
-						- <input type="text" name="phone3">
+						- <input type="text" name="phone3">				
 					</li>
 					<li>
 						<label>영화 장르</label>
@@ -83,7 +95,10 @@
 						<input type="checkbox" name="genre" value="애니메이션"><span>애니메이션</span>
 						<input type="checkbox" name="genre" value="가족/음악"><span>가족/음악</span>
 					</li>
-					<button type="submit" class= "btn_style">저장</button>
+					<li>
+						<button type="button" class="btn_style">가입하기</button>
+						<button type="reset" class="btn_style">다시입력</button>
+					</li>			
 				</ul>
 			</form>
 		</section>
