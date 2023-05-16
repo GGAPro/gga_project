@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <title>GGA_Test1</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/mycgv_jsp/js/jquery-3.6.4.min.js"></script>
+<script src="http://localhost:9000/gga_test1/js/gga_jsp_jquery.js"></script> <!-- gga_jquery.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -53,7 +54,7 @@
 						<li>
 							<a href= "http://localhost:9000/test_gga/join/join.html">
 							<button type="button" class="btn_style">회원가입</button></a>
-							<button type="button" class="btn_style">로그인</button>
+							<button type="button" class="btn_style" id="btnLogin">로그인</button>
 						</li>
 						<li>
 							<span><a href="#">아이디 찾기></a></span>

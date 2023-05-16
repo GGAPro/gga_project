@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>GGA_Test1</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/mycgv_jsp/js/jquery-3.6.4.min.js"></script> <!-- jquery -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/mycgv_jsp/js/jquery-3.6.4.min.js"></script>
+<script src="http://localhost:9000/gga_test1/js/gga_jsp_jquery.js"></script> <!-- gga_jquery.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -46,7 +46,7 @@
 					</li>
 					<li>
 						<label>아이디</label>
-						<input type="text" name="id" class="input1" name="id">
+						<input type="text" name="id" class="input1" id="id">
 						<button type="button" class="btn_style2">중복체크</button>
 						<span id="idCheck_msg"></span>
 					</li>
@@ -109,8 +109,8 @@
 						<input type="checkbox" name="genre" value="가족/음악"><span>가족/음악</span>
 					</li>
 					<li>
-						<button type="submit" class="btn_style">가입하기</button>
 						<button type="reset" class="btn_style">다시입력</button>
+						<button type="submit" class="btn_style" id="btnJoin">가입하기</button>
 					</li>			
 				</ul>
 			</form>
